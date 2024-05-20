@@ -13,6 +13,14 @@ html {
     font-size: 62.5%;
 }
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Light-pink);
     font-family: var(--font-main);
 }
 
@@ -20,4 +28,35 @@ body {
 
 p {
     font-size: 16px;
+}
+
+/* main */
+
+.container {
+    width: 55rem;
+    height: max-content;
+    /* max-height: 55rem; */
+    padding: 3rem;
+    border-radius: 1.5rem;
+    background-color: var(--White);
+    box-shadow: 0px 0px 60px -35px rgba(0,0,0,0.75);
+}
+
+.accordion {
+    display: flex;
+    align-items: baseline; 
+    justify-content: left;
+    flex-direction: row;
+
+}
+
+.accordion-title {
+    margin: 1rem 0rem 2rem 2rem;
+    font-size: 5rem;
+}
+
+.faq-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
