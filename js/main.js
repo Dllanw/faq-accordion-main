@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnAnswer.addEventListener('click', function(e) {
         console.log('...');
-        
+        answer.classList.add('display-none');
     })
+
 
 
 })

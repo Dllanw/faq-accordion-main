@@ -110,3 +110,7 @@ h1, h2 {
 .faq-img__minus {
     background-image: url('/assets/images/icon-minus.svg');
 }
+
+.display-none {
+    display:none;
+}
