@@ -62,7 +62,7 @@ h1, h2 {
 }
 
 .faq {
-    padding: 1rem 0rem;
+    padding: 2.5rem 0rem;
 }
 
 .faq-border {
@@ -78,7 +78,16 @@ h1, h2 {
 .faq-question {
     font-weight: 600;
     font-size: 1.8rem;
-    margin-bottom: 0rem;
+    margin: 0rem 0rem;
+}
+
+.faq-btn {
+    border: none;
+    height: 3rem;
+    width: max-content;
+    border-radius: 50%;
+    padding: 0rem;
+    background-color: transparent;
 }
 
 .faq-btn:hover {
@@ -86,6 +95,6 @@ h1, h2 {
 }
 
 .faq-answer {
-    margin-top: 2.32rem;
+    margin: 2.32rem 0rem 0rem 0rem;
     line-height: 2rem;
 }
