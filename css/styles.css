@@ -107,10 +107,14 @@ h1, h2 {
 
 /* JS */
 
-.faq-img__minus {
+/* .faq-img__minus {
     background-image: url('/assets/images/icon-minus.svg');
-}
+} */
 
 .display-none {
-    display:none;
+    display: none;
+}
+
+.display-on {
+    display: block;
 }
