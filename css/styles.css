@@ -3,6 +3,7 @@
 :root {
     --font-main: "Work Sans", sans-serif;
     /* colors */
+    --purple: #ad28eb;
     --White: hsl(0, 0%, 100%);
     --Light-pink: hsl(275, 100%, 97%);
     --Grayish-purple: hsl(292, 16%, 49%);
@@ -81,6 +82,11 @@ h1, h2 {
     margin: 0rem 0rem;
 }
 
+.faq-question:hover {
+    cursor: pointer;
+    color: var(--purple);
+    transition: color .35s ease;
+}
 .faq-btn {
     border: none;
     height: 3rem;
@@ -97,4 +103,10 @@ h1, h2 {
 .faq-answer {
     margin: 2.32rem 0rem 0rem 0rem;
     line-height: 2rem;
+}
+
+/* JS */
+
+.faq-img__minus {
+    background-image: url('/assets/images/icon-minus.svg');
 }
