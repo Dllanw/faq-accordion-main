@@ -105,16 +105,18 @@ h1, h2 {
     line-height: 2rem;
 }
 
+
 /* JS */
 
 /* .faq-img__minus {
     background-image: url('/assets/images/icon-minus.svg');
 } */
 
+.display-block {
+    display: block;
+}
+
 .display-none {
     display: none;
 }
 
-.display-on {
-    display: block;
-}
