@@ -17,12 +17,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background-image: url('/assets/images/background-pattern-desktop.svg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
+    background-position: top;
     background-color: var(--Light-pink);
+    background-attachment: fixed;
     font-family: var(--font-main);
+    height: 100vh;
+    padding: 0rem 1rem;
+    transition: padding 0.9s ease;
+    overflow: hidden;
+}
+
+@media (max-width: 450px) {
+    body{
+        background-image: url(/assets/images/background-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow: hidden;
+        padding: 2.5rem;
+    }
 }
 
 /* utilities */
@@ -36,13 +51,13 @@ h1, h2 {
     color: var(--Dark-purple)
 }
 
+
 /* main */
 
 .container {
     width: 52rem;
     height: max-content;
-    /* max-height: 55rem; */
-    padding: 4rem;
+    padding: 3.5rem 4rem 4rem 4rem;
     border-radius: 1.5rem;
     background-color: var(--White);
     box-shadow: 0px 0px 60px -35px rgba(0,0,0,0.75);
@@ -50,15 +65,16 @@ h1, h2 {
 
 .accordion {
     display: flex;
-    align-items: first center; 
-    justify-content: start;
+    align-items: center; 
+    justify-content: left;
     flex-direction: row;
-    margin: 1rem 0rem 2rem 0rem;
+    margin: 0rem;
 }
 
 
 .accordion-title {
-    margin: 0rem 0rem 0rem 2rem; 
+    margin: 0rem 0rem 0rem 2rem;
+    height: max-content; 
     font-size: 5.8rem;
 }
 
@@ -66,9 +82,14 @@ h1, h2 {
     padding: 2.5rem 0rem;
 }
 
-.faq-border {
-    border-bottom: 1px solid rgb(0, 0, 0, 8%);
+.padding-bottom {
+    padding-bottom: 0rem;
 }
+
+.faq-border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
 
 .faq-display {
     display: flex;
@@ -103,18 +124,10 @@ h1, h2 {
 .faq-answer {
     margin: 2.32rem 0rem 0rem 0rem;
     line-height: 2rem;
+    overflow: hidden;
 }
-
 
 /* JS */
-
-/* .faq-img__minus {
-    background-image: url('/assets/images/icon-minus.svg');
-} */
-
-.display-block {
-    display: block;
-}
 
 .display-none {
     display: none;
