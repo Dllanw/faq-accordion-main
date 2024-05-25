@@ -20,7 +20,7 @@ body {
     background-image: url('/assets/images/background-pattern-desktop.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: top;
+    background-position: 0rem -9rem;
     background-color: var(--Light-pink);
     background-attachment: fixed;
     font-family: var(--font-main);
@@ -68,14 +68,14 @@ h1, h2 {
     align-items: center; 
     justify-content: left;
     flex-direction: row;
-    margin: 0rem;
+    margin: 0rem 0rem 1rem 0rem;
 }
 
 
 .accordion-title {
     margin: 0rem 0rem 0rem 2rem;
     height: max-content; 
-    font-size: 5.8rem;
+    font-size: 5.7rem;
 }
 
 .faq {
@@ -123,7 +123,8 @@ h1, h2 {
 
 .faq-answer {
     margin: 2.32rem 0rem 0rem 0rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    color: var(--Grayish-purple);
     overflow: hidden;
 }
 
