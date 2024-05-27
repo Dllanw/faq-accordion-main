@@ -1,10 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btnAnswers = document.querySelectorAll(".faq-btn");
-  //   const btnImg = document.querySelector("img");
+  const faqDisplay = document.querySelectorAll(".faq");
+  const img = document.querySelectorAll(".btn-img");
 
-  btnAnswers.forEach((btnAnswer) => {
+  faqDisplay.forEach((btnAnswer) => {
     btnAnswer.addEventListener("click", toggleAnswer);
   });
+
+  img.forEach((imagen) => {
+    imagen.addEventListener("mouseenter", (e) => {
+      const select = e.target;
+      const containerImg = select.closest(".btn-img");
+      containerImg.classList.add("btn-img_width");
+    });
+    imagen.addEventListener("mouseleave", (e) => {
+      const select = e.target;
+      const containerImg = select.closest(".btn-img");
+      containerImg.classList.remove("btn-img_width");
+    });
+  });
+
 
   function toggleAnswer(e) {
     const btn = e.target;
@@ -13,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const answer = faqContainer.querySelector(".faq-answer"); // Encuentra la respuesta dentro del contenedo con la clase de css
 
     answer.classList.toggle("display-none"); // Alterna la visibilidad de la respuesta
-
+    
     // Alternar la imagen del botón
 
     if (btnImg) {

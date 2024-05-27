@@ -79,12 +79,9 @@ h1, h2 {
 }
 
 .faq {
-    padding: 2.5rem 0rem;
+    padding: 2.3rem 0rem;
 }
 
-.padding-bottom {
-    padding-bottom: 0rem;
-}
 
 .faq-border {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -128,9 +125,13 @@ h1, h2 {
     overflow: hidden;
 }
 
+
 /* JS */
 
 .display-none {
     display: none;
 }
 
+.btn-img_width {
+    width: 3.2rem;
+}
