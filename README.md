@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Dllanw/faq-accordion-main))♟️
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://faq-accordion-dllanw.netlify.app/)
 
 ## My process
 
